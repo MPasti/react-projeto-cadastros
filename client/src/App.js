@@ -6,23 +6,22 @@ import Axios from "axios";
 function App() {
   const handleClickLogin = (values) => {
     Axios.post("https//localhost:3001/login", {
-      email: values.email, 
+      email: values.email,
       password: values.password,
-  }).then((response) =>{
-    alert(response.data.msg)
-  })
-  //o .then é para receber algo caso o server envie
-  }
+    }).then((response) => {
+      alert(response.data.msg);
+    });
+    //o .then é para receber algo caso o server envie
+  };
   const handleClickRegister = (values) => {
     Axios.post("https//localhost:3001/register", {
-      email: values.email, 
+      email: values.email,
       password: values.password,
-  }).then((response) =>{
-    alert(response.data.msg)
-  })
-  //o .then é para receber algo caso o server envie
-  }
-
+    }).then((response) => {
+      alert(response.data.msg);
+    });
+    //o .then é para receber algo caso o server envie
+  };
 
   const validationLogin = yup.object().shape({
     email: yup
@@ -133,7 +132,7 @@ function App() {
             />
           </div>
           <button className="button" type="submit">
-            Login
+            Cadastrar
           </button>
         </Form>
       </Formik>
