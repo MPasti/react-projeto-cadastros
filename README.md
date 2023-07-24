@@ -1,5 +1,6 @@
 # react-projeto-cadastros
 Projeto feito para simular uma tela de cadastros com integração com o banco de dados MYSQL
+- usando o MySQL como banco de dados
 - usando Yup para validações
 - formik para layout do formulário
 - usando Axios para fazer as requisições
